@@ -12,7 +12,9 @@ img {
   height:auto;
 }
 /* utility classes */
-
+html{
+    scroll-behavior: smooth;
+}
 /* general styles */
 body {
 
@@ -97,4 +99,19 @@ main{
     font-size:4rem;
     margin:1rem;
     text-align:center;
+}
+/* small screen */
+@media screen and(min-width:576px){
+    main{justify-content:center;
+    flex-flow:row-wrap;
+    padding:1rem;
+}
+.card{
+    width:min(100%,400px);
+    padding:1rem;
+}
+.card:last-child{
+    order:-1;
+}
+
 }
