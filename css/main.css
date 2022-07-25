@@ -36,4 +36,11 @@ header, footer{
     position:sticky;
     background-color:#1e293b;
     color:whitesmoke;
+    text-align:center;
+}
+header{
+    top:0;
+}
+footer{
+    bottom:0;
 }
