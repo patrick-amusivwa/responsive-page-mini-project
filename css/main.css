@@ -92,3 +92,9 @@ main{
     border:5px double black;
     border-radius:50%;
 }
+.card figcaption{
+    font-weight:bolder;
+    font-size:4rem;
+    margin:1rem;
+    text-align:center;
+}
