@@ -12,9 +12,7 @@ img {
   height:auto;
 }
 /* utility classes */
-.nowrap {
-  white-space: nowrap;
-}
+
 /* general styles */
 body {
 
@@ -49,4 +47,26 @@ nav{
     color:black;
     padding:0.5rem;
     border-bottom:2px solid yellow;
+    font-weight:bolder;
+    display:flex;
+    justify-content:space-evenly;
+    
+}
+nav a,nav a:visited{
+    color:black;
+    text-decoration:none;
+
+
+}
+nav a:hover,nav a:focus{
+    color:aliceblue;
+   border:2px solid hsla(217, 33%, 17%, 0.171);
+   background-color:rgba(30, 41, 59, 0.233);
+}
+main{
+    flex-grow:1;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
 }
