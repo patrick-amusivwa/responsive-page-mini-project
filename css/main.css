@@ -26,3 +26,9 @@ body {
     flex-direction:column;
     
 }
+header,nav,main,footer{
+    display:grid;
+    place-content:center;
+    grid-template-columns:100%;
+    text-align:center;
+}
