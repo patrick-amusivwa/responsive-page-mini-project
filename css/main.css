@@ -68,5 +68,27 @@ main{
     display:flex;
     flex-direction:column;
     align-items:center;
+    gap:1.5rem;
+    padding:1rem;
 
+}
+/* profile card */
+.card{
+    scroll-margin-top:8rem;
+    width:min(100%,350px);
+    background-color:#cbd5e1;
+    border:2px sold black;
+    border-radius:15px;
+    padding:1rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.card figure{
+    display:flex;
+    flex-flow:column nowrap;
+}
+.card img{
+    border:5px double black;
+    border-radius:50%;
 }
