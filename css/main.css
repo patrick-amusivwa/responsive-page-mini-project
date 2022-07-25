@@ -12,7 +12,9 @@ img {
   height:auto;
 }
 /* utility classes */
-
+.nowrap {
+  white-space: nowrap;
+}
 /* general styles */
 body {
 
