@@ -37,6 +37,7 @@ header, footer{
     background-color:#1e293b;
     color:whitesmoke;
     text-align:center;
+    z-index:1;
 }
 header{
     top:0;
@@ -54,16 +55,19 @@ nav{
     justify-content:space-evenly;
     
 }
-nav a,nav a:visited{
+nav a:any-link{
     color:black;
     text-decoration:none;
 
 
 }
-nav a:hover,nav a:focus{
+nav :is(a:hover, a:focus){
     color:aliceblue;
    border:2px solid hsla(217, 33%, 17%, 0.171);
    background-color:rgba(30, 41, 59, 0.233);
+}
+nav a:active{
+    color:red;
 }
 main{
     flex-grow:1;
@@ -88,6 +92,9 @@ main{
     flex-direction:column;
     align-items:center;
 }
+.card:target{
+    border:2px solid purple;
+}
 .card figure{
     display:flex;
     flex-flow:column nowrap;
@@ -96,11 +103,42 @@ main{
     border:5px double black;
     border-radius:50%;
 }
+.card img:not([alt]){
+border:10px dotted red;
+}
+.card:nth-child(odd){
+    background-color:papayawhip;
+}
 .card figcaption{
     font-weight:bolder;
     font-size:4rem;
     margin:1rem;
     text-align:center;
+}
+.card figcaption::first-letter{
+    font-size:1.5em;
+    text-transform:capitalize;
+}
+.card figcaption::after{
+    content:'🐬';
+    display:block;
+}
+.card p{
+    position:relative;
+}
+.card p::before{
+    content:open-quote;
+    font-size:1.7em;
+    position :absolute;
+    top:-0.2em;
+    left:-0.5em;
+}
+.card p::after{
+    content:close-quote;
+    font-size:1.7em;
+    position :absolute;
+    top:-0.2em;
+    right:-0.5em;
 }
 /* small screen */
 @media screen and (min-width:576px){
